@@ -1,5 +1,5 @@
 const siteContent = {
-  "nav": {
+  nav: {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
     "nav-item-3": "Vision",
@@ -8,12 +8,12 @@ const siteContent = {
     "nav-item-6": "Contact",
     "img-src": "img/logo.png"
   },
-  "cta": {
-    "h1": "DOM Is Awesome",
-    "button": "Get Started",
+  cta: {
+    h1: "DOM Is Awesome",
+    button: "Get Started",
     "img-src": "img/header-img.png"
   },
-  "main-content": {
+  mainContent: {
     "features-h4": "Features",
     "features-content":
       "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
@@ -31,14 +31,14 @@ const siteContent = {
     "vision-content":
       "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
   },
-  "contact": {
+  contact: {
     "contact-h4": "Contact",
-    "address": "123 Way 456 Street Somewhere, USA",
-    "phone": "1 (888) 888-8888",
-    "email": "sales@greatidea.io"
+    address: "123 Way 456 Street Somewhere, USA",
+    phone: "1 (888) 888-8888",
+    email: "sales@greatidea.io"
   },
-  "footer": {
-    "copyright": "Copyright Great Idea! 2018"
+  footer: {
+    copyright: "Copyright Great Idea! 2018"
   }
 };
 
@@ -50,16 +50,30 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 let navItems = document.querySelectorAll("nav a");
 navItems.forEach(
   (link, i) => (link.innerHTML = siteContent.nav[`nav-item-${i + 1}`])
-); 
+);
 
 //Call To Action//
-const ctaTxt = document.querySelector(".cta-text h1");
+let ctaTxt = document.querySelector(".cta-text h1");
 ctaTxt.innerHTML = siteContent.cta["h1"];
 
-const ctaBtn = document.querySelector(".cta-text button");
+let ctaBtn = document.querySelector(".cta-text button");
 ctaBtn.innerHTML = siteContent.cta["button"];
 
-const ctaImg = document.querySelector("#cta-img");
+let ctaImg = document.querySelector("#cta-img");
 ctaImg.setAttribute("src", siteContent.cta["img-src"]);
 
 //Top Content//
+let featuresH4 = document.querySelector(".top-content .text-content h4");
+featuresH4.innerHTML = siteContent.mainContent["features-h4"];
+
+let featuresP = document.querySelector(".top-content .text-content p");
+featuresP.innerHTML = siteContent.mainContent["features-content"];
+
+let aboutH4 = document.querySelector(
+  ".top-content .text-content:last-child h4"
+);
+aboutH4.innerHTML = siteContent.mainContent["about-h4"];
+
+let aboutP = document.querySelector(".top-content .text-content:last-child p");
+aboutP.innerHTML = siteContent.mainContent["about-content"];
+
