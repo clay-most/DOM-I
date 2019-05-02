@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   cta: {
-    h1: "DOM Is Awesome",
+    h1: "DOM <br/> Is <br/> Awesome",
     button: "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -93,7 +93,9 @@ let productH4 = document.querySelector(
 );
 productH4.innerHTML = siteContent.mainContent["product-h4"];
 
-let productP = document.querySelector(".bottom-content .text-content:nth-child(2) p");
+let productP = document.querySelector(
+  ".bottom-content .text-content:nth-child(2) p"
+);
 productP.innerHTML = siteContent.mainContent["product-content"];
 
 let visionH4 = document.querySelector(
@@ -101,7 +103,26 @@ let visionH4 = document.querySelector(
 );
 visionH4.innerHTML = siteContent.mainContent["vision-h4"];
 
-let visionP = document.querySelector(".bottom-content .text-content:nth-child(3) p");
+let visionP = document.querySelector(
+  ".bottom-content .text-content:nth-child(3) p"
+);
 visionP.innerHTML = siteContent.mainContent["vision-content"];
 
 //Contact//
+//Somthing is broken here. Each selctor works individually but once all are uncommented only the last p tag takes effect.
+
+let contactH4 = document.querySelector(".contact h4");
+contactH4.innerHTML = siteContent.contact["contact-h4"];
+
+let addressP = document.querySelector(".contact p");
+addressP.innerHTML = siteContent.contact["address"];
+
+let phoneP = document.querySelector(".contact p:nth-child(2)");
+phoneP.innerHTML = siteContent.contact["phone"];
+
+let emailP = document.querySelector(".contact p:last-child");
+phoneP.innerHTML = siteContent.contact["email"];
+
+//Footer//
+let footerP = document.querySelector("footer p");
+footerP.innerHTML = siteContent.footer["copyright"];
