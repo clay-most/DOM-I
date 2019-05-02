@@ -52,6 +52,19 @@ navItems.forEach(
   (link, i) => (link.innerHTML = siteContent.nav[`nav-item-${i + 1}`])
 );
 
+let nav = document.querySelector("nav");
+
+let store = document.createElement("a")
+store.textContent = "Store"
+
+let media = document.createElement("a")
+media.textContent = "Media"
+
+nav.append(store);
+nav.prepend(media);
+
+navItems.forEach(i => (i.style.color = "green"));
+
 //Call To Action//
 let ctaTxt = document.querySelector(".cta-text h1");
 ctaTxt.innerHTML = siteContent.cta["h1"];
