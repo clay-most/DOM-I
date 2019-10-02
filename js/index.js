@@ -43,6 +43,8 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//Navigation//
 let logo = document.getElementById('logo-img');
 logo.setAttribute('src', siteContent['nav']['img-src']);
 
@@ -51,3 +53,12 @@ navbar.forEach(
   (link, index) => (link.innerHTML = siteContent.nav[`nav-item-${index + 1}`])
 );
 
+//Call to Action//
+const ctaTxt = document.querySelector('.cta-text h1');
+ctaTxt.innerHTML = siteContent.cta['h1'];
+
+const ctaBtn = document.querySelector('.cta-text button');
+ctaBtn.innerHTML = siteContent.cta['h1'];
+
+const ctaImg = document.querySelector('.cta img');
+ctaImg.setAttribute('src', siteContent.cta['img-src']);
