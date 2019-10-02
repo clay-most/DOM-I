@@ -54,6 +54,23 @@ navbar.forEach(
   (link, index) => (link.innerHTML = siteContent.nav[`nav-item-${index + 1}`])
 );
 
+let nav = document.querySelector('nav');
+
+let store = document.createElement('a');
+store.textContent = 'Store';
+store.setAttribute("href","#")
+store.style.color="green"
+
+let media = document.createElement('a');
+media.textContent = 'Media';
+media.setAttribute("href","#")
+media.style.color="green"
+
+nav.append(store);
+nav.prepend(media);
+
+navbar.forEach(index => (index.style.color = 'green'));
+
 //Call to Action//
 const ctaH1 = document.querySelector('.cta-text h1');
 ctaH1.innerHTML = siteContent.cta['h1'];
