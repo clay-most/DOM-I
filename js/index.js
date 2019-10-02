@@ -85,3 +85,20 @@ aboutP.innerHTML = siteContent['main-content']['about-content'];
 //Middle Image//
 const midImg = document.querySelector('.middle-img');
 midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+//Bottom Content//
+const servicesH4 = document.querySelector('.bottom-content .text-content h4');
+servicesH4.innerHTML = siteContent['main-content']['services-h4'];
+
+const servicesP = document.querySelector('.bottom-content .text-content p');
+servicesP.innerHTML = siteContent['main-content']['services-content'];
+
+const productH4 = document.querySelector(
+  '.bottom-content .text-content:last-child h4'
+);
+productH4.innerHTML = siteContent['main-content']['services-h4'];
+
+const productP = document.querySelector(
+  '.bottom-content .text-content:last-child p'
+);
+productP.innerHTML = siteContent['main-content']['services-content'];
