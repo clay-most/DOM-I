@@ -81,3 +81,7 @@ const aboutP = document.querySelector(
   '.top-content .text-content:last-child p'
 );
 aboutP.innerHTML = siteContent['main-content']['about-content'];
+
+//Middle Image//
+const midImg = document.querySelector('.middle-img');
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
