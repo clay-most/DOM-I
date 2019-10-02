@@ -42,9 +42,10 @@ const siteContent = {
   }
 };
 
+//Navigation//
+
 // Example: Update the img src for the logo
 
-//Navigation//
 let logo = document.getElementById('logo-img');
 logo.setAttribute('src', siteContent['nav']['img-src']);
 
@@ -54,11 +55,29 @@ navbar.forEach(
 );
 
 //Call to Action//
-const ctaTxt = document.querySelector('.cta-text h1');
-ctaTxt.innerHTML = siteContent.cta['h1'];
+const ctaH1 = document.querySelector('.cta-text h1');
+ctaH1.innerHTML = siteContent.cta['h1'];
 
 const ctaBtn = document.querySelector('.cta-text button');
 ctaBtn.innerHTML = siteContent.cta['h1'];
 
 const ctaImg = document.querySelector('.cta img');
 ctaImg.setAttribute('src', siteContent.cta['img-src']);
+
+//Top Content//
+
+const featuresH4 = document.querySelector('.top-content .text-content h4');
+featuresH4.innerHTML = siteContent['main-content']['features-h4'];
+
+const featuresP = document.querySelector('.top-content .text-content p');
+featuresP.innerHTML = siteContent['main-content']['features-content'];
+
+const aboutH4 = document.querySelector(
+  '.top-content .text-content:last-child h4'
+);
+aboutH4.innerHTML = siteContent['main-content']['about-h4'];
+
+const aboutP = document.querySelector(
+  '.top-content .text-content:last-child p'
+);
+aboutP.innerHTML = siteContent['main-content']['about-content'];
