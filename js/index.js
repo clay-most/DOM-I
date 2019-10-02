@@ -73,15 +73,42 @@ const featuresP = document.querySelector('.top-content .text-content p');
 featuresP.innerHTML = siteContent['main-content']['features-content'];
 
 const aboutH4 = document.querySelector(
-  '.top-content .text-content:last-child h4'
+  '.top-content .text-content:nth-child(2) h4'
 );
 aboutH4.innerHTML = siteContent['main-content']['about-h4'];
 
 const aboutP = document.querySelector(
-  '.top-content .text-content:last-child p'
+  '.top-content .text-content:nth-child(2) p'
 );
 aboutP.innerHTML = siteContent['main-content']['about-content'];
 
 //Middle Image//
 const midImg = document.querySelector('.middle-img');
 midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+//Bottom Content//
+const servicesH4 = document.querySelector('.bottom-content .text-content h4');
+servicesH4.innerHTML = siteContent['main-content']['services-h4'];
+
+const servicesP = document.querySelector('.bottom-content .text-content p');
+servicesP.innerHTML = siteContent['main-content']['services-content'];
+
+const productH4 = document.querySelector(
+  '.bottom-content .text-content:nth-child(2) h4'
+);
+productH4.innerHTML = siteContent['main-content']['product-h4'];
+
+const productP = document.querySelector(
+  '.bottom-content .text-content:nth-child(2) p'
+);
+productP.innerHTML = siteContent['main-content']['product-content'];
+
+const visionH4 = document.querySelector(
+  '.bottom-content .text-content:last-child h4'
+);
+visionH4.innerHTML = siteContent['main-content']['vision-h4'];
+
+const visionP = document.querySelector(
+  '.bottom-content .text-content:last-child p'
+);
+visionP.innerHTML = siteContent['main-content']['vision-content'];
