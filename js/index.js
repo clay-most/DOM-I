@@ -125,3 +125,7 @@ phone.innerHTML = siteContent.contact['phone'];
 
 const email = document.querySelector('.contact p:nth-child(4)');
 email.innerHTML = siteContent.contact['email'];
+
+//Footer//
+const footer = document.querySelector('footer p');
+footer.innerHTML = siteContent.footer['copyright'];
