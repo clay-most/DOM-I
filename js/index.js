@@ -112,3 +112,16 @@ const visionP = document.querySelector(
   '.bottom-content .text-content:last-child p'
 );
 visionP.innerHTML = siteContent['main-content']['vision-content'];
+
+//Contact//
+const contactH4 = document.querySelector('.contact h4');
+contactH4.innerHTML = siteContent.contact['contact-h4'];
+
+const address = document.querySelector('.contact p');
+address.innerHTML = siteContent.contact['address'];
+
+const phone = document.querySelector('.contact p:nth-child(3)');
+phone.innerHTML = siteContent.contact['phone'];
+
+const email = document.querySelector('.contact p:nth-child(4)');
+email.innerHTML = siteContent.contact['email'];
