@@ -58,13 +58,13 @@ let nav = document.querySelector('nav');
 
 let store = document.createElement('a');
 store.textContent = 'Store';
-store.setAttribute("href","#")
-store.style.color="green"
+store.setAttribute('href', '#');
+store.style.color = 'green';
 
 let media = document.createElement('a');
 media.textContent = 'Media';
-media.setAttribute("href","#")
-media.style.color="green"
+media.setAttribute('href', '#');
+media.style.color = 'green';
 
 nav.append(store);
 nav.prepend(media);
